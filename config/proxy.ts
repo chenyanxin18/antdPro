@@ -6,12 +6,20 @@
  * For details, please see
  * https://pro.ant.design/docs/deploy
  */
-export default {
+ export default {
   dev: {
     '/api/': {
       target: 'https://preview.pro.ant.design',
       changeOrigin: true,
       pathRewrite: { '^': '' },
+    },
+    '/trace': {
+      target: 'http://yst-scm-zuul-dev.idc.yst.com.cn/trace',
+      secure: false,
+      changeOrigin: true,
+      pathRewrite: {
+        '^/trace': '/',
+      },
     },
   },
   test: {

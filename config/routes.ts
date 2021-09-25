@@ -49,6 +49,12 @@
     component: './TableList',
   },
   {
+    name: '仓库数据管理',
+    icon: 'table',
+    path: '/testTable',
+    component: './test',
+  },
+  {
     path: '/',
     redirect: '/welcome',
   },
